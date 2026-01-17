@@ -119,6 +119,38 @@ The game respects player time by offering meaningful progression even in failed 
 
 ---
 
+## Project Structure
+
+This project follows industry best practices for Unity development. For detailed information:
+
+- **[ARCHITECTURE.md](ARCHITECTURE.md)** - Complete project structure, coding patterns, and naming conventions
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** - Guidelines for adding new features and code templates
+- **[Docs/](Docs/)** - Setup guides and troubleshooting documentation
+
+### Quick Reference
+
+```
+Assets/_Project/
+├── Animations/      # Animation clips and controllers
+├── Art/            # Materials, textures, VFX
+├── Data/           # ScriptableObjects (game data)
+├── Models/         # 3D models
+├── Prefabs/        # Reusable game objects
+├── Scenes/         # Unity scenes
+├── Scripts/        # All C# code
+└── UI/             # UI assets
+```
+
+**Key Principles:**
+- All code uses namespaces (`Gear.Player`, `Gear.Enemy`, etc.)
+- Private fields use `_camelCase` with underscore prefix
+- Public APIs have XML documentation
+- Network code uses Unity Netcode for GameObjects
+
+See [ARCHITECTURE.md](ARCHITECTURE.md) for complete guidelines.
+
+---
+
 ## Technical Details
 
 - **Engine**: Unity
@@ -127,7 +159,7 @@ The game respects player time by offering meaningful progression even in failed 
 
 ## Contributing
 
-*(Add contribution guidelines when ready for external contributors)*
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding features, code style, and development workflow.
 
 ## License
 
